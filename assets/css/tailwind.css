@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-size: 62.5%;
+        @apply text-lp-grey-blue bg-lp-white;
+    }
+
+    body {
+        @apply text-15
+    }
+
+    .button {
+        &.primary {
+             @apply bg-lp-green p-2_5 uppercase w-full text-20 text-lp-white flex items-center justify-center;
+        }
+    }
+
+    h2 {
+        @apply text-12 uppercase mb-2 tracking-[1.56px];
+    }
+    p {
+        @apply mb-2;
+    }
+}

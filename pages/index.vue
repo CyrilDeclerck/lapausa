@@ -1,5 +1,6 @@
 <template>
-  <div>
-      {{ $t('coucou') }}
-  </div>
+  <SectionsTopSlider />
+  <StickyButtons />
+  <SectionsAboutUs />
 </template>
+<script setup lang="ts"></script>

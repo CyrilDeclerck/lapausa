@@ -1,3 +1,13 @@
 {
-  "coucou": "Petite perruche"
+  "about_us": "Qui sommes-nous ?",
+  "rates_and_conditions": "Tarifs et conditions",
+  "activities_and_services":"Activités et services",
+  "access": "Accès",
+  "contact": "Contact",
+  "la_pausa": "La Pausa",
+  "catch_phrase": "Un lieu unique entre<br/> Portofino<br/> et les Cinque Terre",
+  "book_button": "Réserver",
+  "show_more_link": "Lire plus",
+  "about_us_first_part": "La Pausa est un ancien « Rustico », comprenez petite bergerie, situé <i>au cœur de la Liguria</i>, à quelques minutes de Chiavari, où locaux et visiteurs goûtent à la dolce vita italienne entre terre et mer.",
+  "about_us_second_part": "Entièrement rénovée à l’automne 2023 par deux amoureux des vieilles pierres, la Pausa a été pensé comme un <i>lieu chaleureux</i>, fidèle au caractère authentique de la côte."
 }

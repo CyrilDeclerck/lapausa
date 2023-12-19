@@ -1,13 +1,10 @@
 <template>
   <div>
-      <NuxtLink :to="switchLocalePath('en')">English</NuxtLink>
-      <NuxtLink :to="switchLocalePath('fr')">Français</NuxtLink>
-      <NuxtLink :to="switchLocalePath('it')">Italian</NuxtLink>
-
+    <Header />
+    <div class="pb-[70px]">
       <NuxtPage />
+    </div>
   </div>
 </template>
 
-<script setup>
-const switchLocalePath = useSwitchLocalePath()
-</script>
+<script setup></script>
