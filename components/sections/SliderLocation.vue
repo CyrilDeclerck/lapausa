@@ -40,7 +40,7 @@
 <style scoped lang="postcss">
 .swiper-image.swiper {
   :deep(&-wrapper) {
-    height: 440px;
+    height: calc(100vh - 125px);
   }
 }
 </style>
