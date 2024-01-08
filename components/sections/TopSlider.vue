@@ -29,7 +29,7 @@
   @apply w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center text-30 text-lp-white z-10 flex flex-col items-center text-center leading-none;
 }
 .swiper {
-  height: calc(100dvh - 145px);
+  height: calc(100vh - 145px);
   :deep(&-pagination) {
     @apply bottom-4;
     &-bullet {
