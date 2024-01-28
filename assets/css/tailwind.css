@@ -18,8 +18,11 @@
         }
     }
 
-    h2 {
+    .subtitle {
         @apply text-12 uppercase mb-2 tracking-[1.56px];
+    }
+    .title {
+        @apply text-35 mb-4;
     }
     p {
         @apply mb-2;

@@ -1,6 +1,6 @@
 <template>
   <div class="py-6 px-3">
-    <h2>{{ $t("about_us") }}</h2>
+    <h2 class="subtitle">{{ $t("about_us") }}</h2>
     <p v-html="$t('about_us_first_part')"></p>
     <p v-html="$t('about_us_second_part')"></p>
     <span class="italic underline cursor-pointer"

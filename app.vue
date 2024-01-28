@@ -4,6 +4,7 @@
     <div class="pb-[70px]">
       <NuxtPage />
     </div>
+    <Footer />
   </div>
 </template>
 

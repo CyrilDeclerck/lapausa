@@ -4,7 +4,7 @@
       :modules="[SwiperNavigation, SwiperThumbs]"
       :thumbs="{ swiper: thumbsSwiper }"
       :slides-per-view="1"
-      height="440"
+      :height="440"
       class="swiper-image"
       :navigation="{
         nextEl: '.arrow.next',
@@ -19,6 +19,7 @@
         />
       </SwiperSlide>
       <div
+        :class="classTitle"
         class="w-full bg-lp-camel flex items-center justify-between py-4 px-3 text-lp-grey-green"
       >
         <Swiper
@@ -27,7 +28,11 @@
           effect="fade"
           :crossFade="true"
         >
-          <SwiperSlide v-for="slide in slides" class="bg-lp-camel">
+          <SwiperSlide
+            v-for="slide in slides"
+            :class="classTitle"
+            class="bg-lp-camel"
+          >
             {{ slide.title }}
           </SwiperSlide>
         </Swiper>
@@ -39,22 +44,13 @@
 
 <style scoped lang="postcss">
 .swiper-image.swiper {
-  :deep(&-wrapper) {
-    height: calc(100vh - 125px);
+  :deep(> .swiper-wrapper) {
+    height: calc(100vh - 210px);
   }
 }
 </style>
 <script setup>
-const slides = [
-  {
-    src: "/home.jpg",
-    title: "Cuisine",
-  },
-  {
-    src: "/home.jpg",
-    title: "Salon",
-  },
-];
+const { slides, classTitle } = defineProps(["slides", "classTitle"]);
 
 const thumbsSwiper = ref(null);
 const setThumbsSwiper = (swiper) => {

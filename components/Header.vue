@@ -17,11 +17,10 @@
       </option>
     </select>
     <img
-      src="~/assets/images/logo.svg"
+      src="~/assets/images/logo.png"
       alt="La Pausa"
       v-show="!menu"
-      height="120"
-      class="logo transition-all absolute bg-lp-camel rounded-full mx-auto inset-x-0 -bottom-full mt-1 p-1"
+      class="logo transition-all absolute bg-lp-camel rounded-full mx-auto inset-x-0 top-0 mt-1 p-1 h-[120px]"
     />
     <img
       src="~/assets/images/menu.svg"
