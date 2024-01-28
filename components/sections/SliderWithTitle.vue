@@ -4,7 +4,6 @@
       :modules="[SwiperNavigation, SwiperThumbs]"
       :thumbs="{ swiper: thumbsSwiper }"
       :slides-per-view="1"
-      :height="440"
       class="swiper-image"
       :navigation="{
         nextEl: '.arrow.next',
@@ -45,7 +44,7 @@
 <style scoped lang="postcss">
 .swiper-image.swiper {
   :deep(> .swiper-wrapper) {
-    height: calc(100vh - 210px);
+    height: calc(100dvh - 210px);
   }
 }
 </style>
