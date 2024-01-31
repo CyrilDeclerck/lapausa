@@ -56,9 +56,9 @@ const rates = [
   @apply flex flex-col p-1_5 text-center leading-none;
 }
 ul {
-  @apply -indent-2_5 ml-2_5;
+  @apply -indent-3 ml-3;
   li {
-    @apply text-17;
+    @apply text-20;
   }
 }
 </style>

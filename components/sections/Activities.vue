@@ -2,7 +2,7 @@
   <div class="py-6 px-3 bg-white">
     <h3 class="subtitle">{{ $t("activities_and_services") }}</h3>
     <h2 class="title">{{ $t("activities") }}</h2>
-    <p class="mb-4">{{ $t("activities_description") }}</p>
+    <p class="mb-4 text-20">{{ $t("activities_description") }}</p>
     <table class="table-fixed w-full mb-6">
       <thead>
         <tr>
