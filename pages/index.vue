@@ -18,18 +18,18 @@ const insideSlides = [
   },
   {
     src: "/home.jpg",
-    title: "Salon",
+    title: "Image 2",
   },
 ];
 
 const outsideSlides = [
   {
     src: "/garden.png",
-    title: "La terasse",
+    title: "La terrasse",
   },
   {
     src: "/home.jpg",
-    title: "Salon",
+    title: "Image 2",
   },
 ];
 
@@ -40,7 +40,7 @@ const activitiesSlides = [
   },
   {
     src: "/home.jpg",
-    title: "Salon",
+    title: "Image 2",
   },
 ];
 </script>

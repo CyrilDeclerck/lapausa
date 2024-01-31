@@ -15,7 +15,7 @@
       </div>
     </div>
     <div>
-      <h2 class="title">{{ $t("conditions") }}</h2>
+      <h2 class="title mt-4">{{ $t("conditions") }}</h2>
       <ul class="list-disc list-inside">
         <li>2 nuits minimum.</li>
         <li>Remise de 15% à partir de 5 nuitées</li>
@@ -57,5 +57,8 @@ const rates = [
 }
 ul {
   @apply -indent-2_5 ml-2_5;
+  li {
+    @apply text-17;
+  }
 }
 </style>
