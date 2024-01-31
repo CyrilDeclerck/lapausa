@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex items-center justify-between bg-lp-camel px-4 h-[75px] relative sticky top-0 z-50"
+    class="flex items-center justify-between bg-lp-green-light px-4 h-[75px] relative sticky top-0 z-50"
     :class="{ 'sticky-header': y >= 50 }"
   >
     <select
@@ -20,7 +20,7 @@
       src="~/assets/images/logo.png"
       alt="La Pausa"
       v-show="!menu"
-      class="logo transition-all absolute bg-lp-camel rounded-full mx-auto inset-x-0 top-0 mt-1 p-1 h-[120px]"
+      class="logo transition-all absolute bg-lp-green-light rounded-full mx-auto inset-x-0 top-0 mt-1 p-1 h-[120px]"
     />
     <img
       src="~/assets/images/menu.svg"
@@ -28,7 +28,7 @@
       @click="menu = !menu"
     />
   </header>
-  <nav v-show="menu" class="w-full h-screen bg-lp-camel p-4 z-50 fixed">
+  <nav v-show="menu" class="w-full h-screen bg-lp-green-light p-4 z-50 fixed">
     <ul>
       <li>{{ $t("about_us") }}</li>
       <li>{{ $t("rates_and_conditions") }}</li>

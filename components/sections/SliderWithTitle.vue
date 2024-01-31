@@ -19,7 +19,7 @@
       </SwiperSlide>
       <div
         :class="classTitle"
-        class="w-full bg-lp-camel flex items-center justify-between py-4 px-3 text-lp-grey-green"
+        class="w-full bg-lp-camel flex items-center justify-between py-4 px-3 text-lp-grey-blue"
       >
         <Swiper
           :modules="[SwiperThumbs, SwiperEffectFade]"

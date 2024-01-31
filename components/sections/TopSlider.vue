@@ -1,8 +1,10 @@
 <template>
   <div class="relative">
     <h1 class="title">
-      <span class="block text-50">{{ $t("la_pausa") }}</span>
-      <span class="italic" v-html="$t('catch_phrase')"></span>
+      <span class="block text-40 uppercase tracking-[8px] leading-snug">{{
+        $t("la_pausa")
+      }}</span>
+      <span class="text-26 leading-tight" v-html="$t('catch_phrase')"></span>
     </h1>
     <Swiper
       :modules="[SwiperAutoplay, SwiperPagination]"
