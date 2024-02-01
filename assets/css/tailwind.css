@@ -14,7 +14,7 @@
 
     .button {
         &.primary {
-             @apply bg-lp-green p-2_5 uppercase w-full text-20 text-lp-white flex items-center justify-center;
+             @apply bg-lp-green p-2_5 w-full text-20 text-lp-white flex items-center justify-center;
         }
     }
 

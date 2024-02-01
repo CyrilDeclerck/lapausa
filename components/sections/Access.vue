@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6 px-3">
+  <div class="py-6 px-3" id="access">
     <h3 class="subtitle">{{ $t("access") }}</h3>
     <h2 class="title mb-3">{{ $t("to_join_us") }}</h2>
     <div class="text-20">

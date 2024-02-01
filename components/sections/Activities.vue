@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6 px-3 bg-white">
+  <div class="py-6 px-3 bg-white" id="activities">
     <h3 class="subtitle">{{ $t("activities_and_services") }}</h3>
     <h2 class="title">{{ $t("activities") }}</h2>
     <p class="mb-4 text-20">{{ $t("activities_description") }}</p>

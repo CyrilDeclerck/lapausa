@@ -3,8 +3,8 @@
     <Header />
     <div class="pb-[70px]">
       <NuxtPage />
+      <Footer />
     </div>
-    <Footer />
   </div>
 </template>
 

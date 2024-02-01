@@ -12,7 +12,7 @@
       :slides-per-view="1"
       :loop="true"
       :autoplay="{
-        delay: 8000,
+        delay: 3000,
         disableOnInteraction: true,
       }"
     >

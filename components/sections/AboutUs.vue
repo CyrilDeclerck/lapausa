@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6 px-3">
+  <div class="py-6 px-3" id="about-us">
     <h2 class="subtitle">{{ $t("about_us") }}</h2>
     <p v-html="$t('about_us_first_part')"></p>
     <p v-html="$t('about_us_second_part')"></p>
