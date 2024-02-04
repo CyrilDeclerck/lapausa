@@ -28,11 +28,8 @@
     <nuxt-icon :name="!menu ? 'menu' : 'cross'" @click="menu = !menu" />
   </header>
   <transition name="slidedown">
-    <nav
-      v-show="menu"
-      class="w-full h-screen bg-lp-green-light p-4 z-50 fixed transition-gpu"
-    >
-      <ul>
+    <nav v-show="menu" class="w-full h-screen bg-lp-green-light z-50 fixed">
+      <ul class="p-4">
         <li>
           <a href="#about-us" @click="menu = false">{{ $t("about_us") }}</a>
         </li>
@@ -91,7 +88,7 @@ nav {
 .v-enter-active,
 .v-leave-active {
   transition: opacity 0.5s ease;
-  transition-delay: 0.5s;
+  transition-delay: 1s;
 }
 
 .v-enter-from,
@@ -108,7 +105,7 @@ nav {
 .slidedown-enter-to,
 .slidedown-leave-from {
   overflow: hidden;
-  max-height: 100vh;
+  max-height: 100dvh;
 }
 
 .slidedown-enter-from,
