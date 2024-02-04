@@ -17,14 +17,13 @@
     <div>
       <h2 class="title mt-4">{{ $t("conditions") }}</h2>
       <ul class="list-disc list-inside">
-        <li>2 nuits minimum.</li>
-        <li>Remise de 15% à partir de 5 nuitées</li>
-        <li>Supplément de 15€/nuit si ajout d’un couchage d’appoint</li>
-        <li>Les animaux ne sont pas admis</li>
-        <li>Maison non fumeur</li>
+        <li>{{ $t("conditions_1") }}</li>
+        <li>{{ $t("conditions_2") }}</li>
+        <li>{{ $t("conditions_3") }}</li>
+        <li>{{ $t("conditions_4") }}</li>
+        <li>{{ $t("conditions_5") }}</li>
         <li>
-          Les chambres doivent être libérées à 12h, les arrivées se font à
-          partir de 16h.
+          {{ $t("conditions_6") }}
         </li>
       </ul>
     </div>
@@ -36,7 +35,7 @@ const rates = [
   {
     season: "high_season",
     period: "july_and_august",
-    price: 165,
+    price: 170,
   },
   {
     season: "mid_season",

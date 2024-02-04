@@ -29,10 +29,10 @@
       <a href="tel:+39 353 330 6376">+39 353 330 6376</a>
     </div>
     <a
-      href=""
+      href="https://www.instagram.com/l.a.pausa/?igsh=OGQ5ZDc2ODk2ZA%3D%3D"
       target="_blank"
       class="flex items-center justify-center text-lp-camel gap-1 mt-2"
-      ><nuxt-icon name="instagram" /> @lapausa.liguria
+      ><nuxt-icon name="instagram" /> @l.a.pausa
     </a>
     <div class="mt-6 pt-3 mx-3 border-t border-white text-center text-10">
       © 2024 <a href="mailto:hello@cilys.fr">Cilys</a>

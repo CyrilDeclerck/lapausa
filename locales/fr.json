@@ -9,7 +9,7 @@
   "book_button": "Réserver",
   "show_more_link": "Lire plus",
   "about_us_first_part": "La Pausa est un ancien « Rustico », comprenez petite bergerie, située au cœur de la Liguria, à quelques minutes de Chiavari, où locaux et visiteurs goûtent à la dolce vita italienne entre terre et mer.",
-  "about_us_second_part": "Entièrement rénovée à l’automne 2023 par deux amoureux des vieilles pierres, la Pausa a été pensé comme un lieu chaleureux, fidèle au caractère authentique de la côte.",
+  "about_us_second_part": "Entièrement rénovée à l’automne 2023 par deux amoureux des vieilles pierres, la Pausa a été pensée comme un lieu chaleureux, fidèle au caractère authentique de la côte.",
   "rates": "Tarifs",
   "high_season": "Haute saison",
   "mid_season": "Moy. saison",
@@ -37,5 +37,17 @@
   "station2": "Gare de Chiavari : + 10 min. de voiture",
   "servizio_taxi":"Servizio taxi",
   "address": "Adresse",
-  "request_reservation": "Demande <br/> de réservation :"
+  "request_reservation": "Demande <br/> de réservation :",
+  "conditions_1": "2 nuits minimum.",
+  "conditions_2": "Remise de 15% à partir de 5 nuitées",
+  "conditions_3": "Supplément de 15€/nuit si ajout d’un couchage d’appoint",
+  "conditions_4": "Les animaux ne sont pas admis",
+  "conditions_5": "Maison non fumeur",
+  "conditions_6": "La maison doit être libérée à 12h, les arrivées se font à partir de 16h.",
+  "about_us_surface": "Surface 40 m<sup>2</sup>",
+  "about_us_parking": "Parking",
+  "about_us_wifi": "Wifi",
+  "about_us_shower": "Douche",
+  "about_us_family": "2 adultes <br/>+ 1 enfant <span class='text-11'>(+ de 7 ans)</span>",
+  "about_us_bed": "Lit 160x200"
 }

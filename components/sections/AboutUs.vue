@@ -10,7 +10,7 @@
   <div class="grid grid-cols-3 gap-1 mb-7">
     <span class="flex flex-col items-center mt-3" v-for="service in services">
       <nuxt-icon class="icon" :name="service.icon" filled />
-      <span class="text-center leading-none mt-1" v-html="service.title" />
+      <span class="text-center leading-none mt-1" v-html="$t(service.title)" />
     </span>
   </div>
 </template>
@@ -27,28 +27,27 @@ p {
 <script setup lang="ts">
 const services = [
   {
-    title: "Parking",
+    title: "about_us_parking",
     icon: "parking",
   },
   {
-    title: "Wifi",
+    title: "about_us_wifi",
     icon: "wifi",
   },
   {
-    title: "Surface 35 m<sup>2</sup>",
+    title: "about_us_surface",
     icon: "space",
   },
   {
-    title: "Douche",
+    title: "about_us_shower",
     icon: "shower",
   },
   {
-    title:
-      "2 adultes <br/>+ 1 enfant <span class='text-11'>(+ de 7 ans)</span>",
+    title: "about_us_family",
     icon: "family",
   },
   {
-    title: "Lit 160x200",
+    title: "about_us_bed",
     icon: "bed",
   },
 ];
