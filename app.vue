@@ -8,4 +8,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+useSeoMeta({
+  robots: "noindex, nofollow",
+  themeColor: "#B6B9A2",
+});
+useHead({});
+</script>

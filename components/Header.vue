@@ -1,11 +1,11 @@
 <template>
   <header
-    class="flex items-center justify-between bg-lp-green-light px-4 h-[75px] relative sticky top-0 z-50"
+    class="flex items-center justify-between bg-lp-green-light px-4 h-[75px] relative sticky top-0 z-50 lg:flex-row-reverse"
     :class="{ 'sticky-header': y >= 50 }"
   >
     <select
       @change="setLocale($event.target.value)"
-      class="bg-transparent text-12"
+      class="bg-lp-green-light text-12"
     >
       <option
         v-for="localeAvailable in locales"
@@ -25,38 +25,50 @@
         @click="y = 0"
       />
     </transition>
-    <nuxt-icon :name="!menu ? 'menu' : 'cross'" @click="menu = !menu" />
+    <nuxt-icon
+      class="lg:hidden"
+      :name="!menu ? 'menu' : 'cross'"
+      @click="menu = !menu"
+    />
+    <transition name="slidedown">
+      <nav
+        v-show="menu"
+        class="w-full h-screen bg-lp-green-light z-50 fixed lg:static lg:w-auto lg:h-auto lg:z-auto inset-0 top-[75px] lg:!block"
+      >
+        <ul class="p-4">
+          <li>
+            <a href="#about-us" @click="menu = false">{{ $t("about_us") }}</a>
+          </li>
+          <li>
+            <a href="#rates" @click="menu = false">{{
+              $t("rates_and_conditions")
+            }}</a>
+          </li>
+          <li>
+            <a href="#activities" @click="menu = false">{{
+              $t("activities_and_services")
+            }}</a>
+          </li>
+          <li>
+            <a href="#access" @click="menu = false">{{ $t("access") }}</a>
+          </li>
+          <li>
+            <a href="#contact" @click="menu = false">{{ $t("contact") }}</a>
+          </li>
+        </ul>
+      </nav>
+    </transition>
   </header>
-  <transition name="slidedown">
-    <nav v-show="menu" class="w-full h-screen bg-lp-green-light z-50 fixed">
-      <ul class="p-4">
-        <li>
-          <a href="#about-us" @click="menu = false">{{ $t("about_us") }}</a>
-        </li>
-        <li>
-          <a href="#rates" @click="menu = false">{{
-            $t("rates_and_conditions")
-          }}</a>
-        </li>
-        <li>
-          <a href="#activities" @click="menu = false">{{
-            $t("activities_and_services")
-          }}</a>
-        </li>
-        <li>
-          <a href="#access" @click="menu = false">{{ $t("access") }}</a>
-        </li>
-        <li>
-          <a href="#contact" @click="menu = false">{{ $t("contact") }}</a>
-        </li>
-      </ul>
-    </nav>
-  </transition>
 </template>
 
 <script setup>
+import { breakpointsTailwind, useBreakpoints } from "@vueuse/core";
+
+const breakpoints = useBreakpoints(breakpointsTailwind);
+const isDesktop = breakpoints.greater("lg");
+
 const { locale, locales, setLocale } = useI18n();
-const menu = ref(false);
+const menu = ref(isDesktop || false);
 const { y } = useWindowScroll({ behavior: "smooth" });
 useHead({
   bodyAttrs: {
@@ -75,16 +87,16 @@ useHead({
 
 nav {
   ul {
+    @apply lg:flex;
     li {
-      @apply text-25 border-b pb-2_5 mb-2_5 text-center border-lp-grey-blue;
+      @apply text-25 border-b pb-2_5 mb-2_5 text-center border-lp-grey-blue lg:text-18 lg:border-0;
       &:last-child {
         @apply border-0;
       }
     }
   }
 }
-.v-leave-active img {
-}
+
 .v-enter-active,
 .v-leave-active {
   transition: opacity 0.5s ease;
