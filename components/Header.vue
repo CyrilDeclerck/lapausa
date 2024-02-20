@@ -1,63 +1,93 @@
 <template>
   <header
-    class="flex items-center justify-between bg-lp-green-light px-4 h-[75px] relative sticky top-0 z-50 lg:flex-row-reverse"
+    class="bg-lp-green-light px-4 h-[75px] relative sticky top-0 z-50 lg:pl-9 lg:pr-0"
     :class="{ 'sticky-header': y >= 50 }"
   >
-    <select
-      @change="setLocale($event.target.value)"
-      class="bg-lp-green-light text-12"
+    <div
+      class="flex items-center justify-between lg:max-w-[1920px] lg:m-auto lg:flex-row-reverse h-full"
     >
-      <option
-        v-for="localeAvailable in locales"
-        :key="localeAvailable.code"
-        :value="localeAvailable.code"
-        :selected="locale === localeAvailable.code"
-      >
-        {{ localeAvailable.name }}
-      </option>
-    </select>
-    <transition>
-      <img
-        src="~/assets/images/logo.png"
-        alt="La Pausa"
-        v-show="!menu"
-        class="logo transition-all absolute bg-lp-green-light rounded-full mx-auto inset-x-0 top-0 mt-1 p-1 h-[120px]"
-        @click="y = 0"
+      <div class="lg:flex lg:h-full">
+        <select
+          @change="setLocale($event.target.value)"
+          class="bg-lp-green-light text-12"
+        >
+          <option
+            v-for="localeAvailable in locales"
+            :key="localeAvailable.code"
+            :value="localeAvailable.code"
+            :selected="locale === localeAvailable.code"
+          >
+            {{ localeAvailable.name }}
+          </option>
+        </select>
+        <a
+          class="!hidden button primary uppercase min-w-[250px] lg:!flex lg:ml-6"
+          href="mailto:lapausa.liguria@gmail.com"
+        >
+          <nuxt-icon name="key" />
+          <span class="ml-1">{{ $t("book_button") }}</span>
+        </a>
+      </div>
+
+      <transition>
+        <img
+          src="~/assets/images/logo.png"
+          alt="La Pausa"
+          v-show="!menu"
+          class="logo transition-all absolute bg-lp-green-light rounded-full mx-auto inset-x-0 top-0 mt-1 p-1 h-[120px] lg:mt-0 lg:h-[123px]"
+          @click="y = 0"
+        />
+      </transition>
+      <nuxt-icon
+        class="lg:hidden"
+        :name="!menu ? 'menu' : 'cross'"
+        @click="menu = !menu"
       />
-    </transition>
-    <nuxt-icon
-      class="lg:hidden"
-      :name="!menu ? 'menu' : 'cross'"
-      @click="menu = !menu"
-    />
-    <transition name="slidedown">
-      <nav
-        v-show="menu"
-        class="w-full h-screen bg-lp-green-light z-50 fixed lg:static lg:w-auto lg:h-auto lg:z-auto inset-0 top-[75px] lg:!block"
-      >
-        <ul class="p-4">
-          <li>
-            <a href="#about-us" @click="menu = false">{{ $t("about_us") }}</a>
-          </li>
-          <li>
-            <a href="#rates" @click="menu = false">{{
-              $t("rates_and_conditions")
-            }}</a>
-          </li>
-          <li>
-            <a href="#activities" @click="menu = false">{{
-              $t("activities_and_services")
-            }}</a>
-          </li>
-          <li>
-            <a href="#access" @click="menu = false">{{ $t("access") }}</a>
-          </li>
-          <li>
-            <a href="#contact" @click="menu = false">{{ $t("contact") }}</a>
-          </li>
-        </ul>
-      </nav>
-    </transition>
+      <transition name="slidedown">
+        <nav
+          v-show="menu"
+          class="w-full h-screen bg-lp-green-light z-50 fixed lg:static lg:w-auto lg:h-auto lg:z-auto inset-0 top-[75px] lg:!block lg:h-full"
+        >
+          <ul class="p-4 lg:p-0">
+            <li>
+              <NuxtLink
+                :to="{ path: '/', hash: '#about-us' }"
+                @click="menu = false"
+                >{{ $t("about_us") }}</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                :to="{ path: '/', hash: '#rates' }"
+                @click="menu = false"
+                >{{ $t("rates_and_conditions") }}</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                :to="{ path: '/', hash: '#activities' }"
+                @click="menu = false"
+                >{{ $t("activities_and_services") }}</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                :to="{ path: '/', hash: '#access' }"
+                @click="menu = false"
+                >{{ $t("access") }}</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink
+                :to="{ path: '/', hash: '#contact' }"
+                @click="menu = false"
+                >{{ $t("contact") }}</NuxtLink
+              >
+            </li>
+          </ul>
+        </nav>
+      </transition>
+    </div>
   </header>
 </template>
 
@@ -68,11 +98,11 @@ const breakpoints = useBreakpoints(breakpointsTailwind);
 const isDesktop = breakpoints.greater("lg");
 
 const { locale, locales, setLocale } = useI18n();
-const menu = ref(isDesktop || false);
+const menu = ref(false);
 const { y } = useWindowScroll({ behavior: "smooth" });
 useHead({
   bodyAttrs: {
-    class: computed(() => (menu.value ? "overflow-hidden" : "")),
+    class: computed(() => (menu.value && !isDesktop ? "overflow-hidden" : "")),
   },
 });
 </script>
@@ -87,11 +117,14 @@ useHead({
 
 nav {
   ul {
-    @apply lg:flex;
+    @apply lg:flex lg:gap-6 lg:items-center lg:h-full;
     li {
-      @apply text-25 border-b pb-2_5 mb-2_5 text-center border-lp-grey-blue lg:text-18 lg:border-0;
+      @apply text-25 border-b pb-2_5 mb-2_5 text-center border-lp-grey-blue lg:text-18 lg:border-0 lg:mb-0 lg:pb-0 lg:h-full lg:flex lg:items-center;
       &:last-child {
         @apply border-0;
+      }
+      &:hover {
+        @apply relative after:border-b after:border-b-white after:absolute after:bottom-0 after:w-full after:h-[3px] after:inset-x-0;
       }
     }
   }

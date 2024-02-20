@@ -1,6 +1,6 @@
 <template>
   <SectionsTopSlider />
-  <StickyButtons />
+  <StickyButtons class="lg:!hidden" />
   <SectionsAboutUs />
   <SectionsSliderWithTitle :slides="insideSlides" />
   <SectionsRatesAndConditions />
