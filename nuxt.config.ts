@@ -1,6 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
+  ssr: false,
+  nitro: {
+    prerender: {
+      routes: [
+        "/_ipx/_/home.jpg",
+        "/_ipx/_/home-d.jpg",
+        // etc.
+      ],
+    },
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n",
@@ -8,6 +18,7 @@ export default defineNuxtConfig({
     "nuxt-swiper",
     "@vueuse/nuxt",
     "nuxt-icons",
+    "@nuxt/image",
   ],
   googleFonts: {
     download: true,

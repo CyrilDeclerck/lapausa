@@ -16,11 +16,20 @@
         disableOnInteraction: true,
       }"
     >
-      <SwiperSlide>
-        <img src="/home.jpg" class="max-w-none h-full w-full object-cover" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="/home.jpg" class="max-w-none h-full w-full object-cover" />
+      <SwiperSlide v-for="slide in slides">
+        <picture>
+          <!-- Image de bureau -->
+          <source media="(min-width: 1024px)" :srcset="slide.images.desktop" />
+          <!-- Image mobile -->
+          <source media="(max-width: 1023px)" :srcset="slide.images.mobile" />
+
+          <NuxtImg
+            :src="slide.images.desktop"
+            format="webp"
+            alt="Image"
+            class="max-w-none h-full w-full object-cover"
+          />
+        </picture>
       </SwiperSlide>
     </Swiper>
   </div>
@@ -31,7 +40,7 @@
   @apply w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center text-30 text-lp-white z-10 flex flex-col items-center text-center leading-none;
 }
 .swiper {
-  height: calc(100vh - 145px);
+  @apply h-[calc(100vh-145px)] lg:h-[calc(100vh-75px)];
   :deep(&-pagination) {
     @apply bottom-4;
     &-bullet {
@@ -43,4 +52,21 @@
   }
 }
 </style>
-<script setup lang="ts"></script>
+<script setup>
+const slides = [
+  {
+    alt: "la pausa",
+    images: {
+      desktop: "/_ipx/_/home-d.jpg",
+      mobile: "/_ipx/_/home.jpg",
+    },
+  },
+  {
+    alt: "la pausa 1",
+    images: {
+      desktop: "/_ipx/_/home-d.jpg",
+      mobile: "/_ipx/_/home.jpg",
+    },
+  },
+];
+</script>

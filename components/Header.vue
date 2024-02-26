@@ -46,6 +46,7 @@
       <transition name="slidedown">
         <nav
           v-show="menu"
+          :class="{ 'top-[50px]': y >= 50 }"
           class="w-full h-screen bg-lp-green-light z-50 fixed lg:static lg:w-auto lg:h-auto lg:z-auto inset-0 top-[75px] lg:!block lg:h-full"
         >
           <ul class="p-4 lg:p-0">
@@ -102,7 +103,7 @@ const menu = ref(false);
 const { y } = useWindowScroll({ behavior: "smooth" });
 useHead({
   bodyAttrs: {
-    class: computed(() => (menu.value && !isDesktop ? "overflow-hidden" : "")),
+    class: computed(() => (menu.value ? "overflow-hidden" : "")),
   },
 });
 </script>
@@ -124,7 +125,7 @@ nav {
         @apply border-0;
       }
       &:hover {
-        @apply relative after:border-b after:border-b-white after:absolute after:bottom-0 after:w-full after:h-[3px] after:inset-x-0;
+        @apply lg:relative lg:after:border-b lg:after:border-b-white lg:after:absolute lg:after:bottom-0 lg:after:w-full lg:after:h-[3px] lg:after:inset-x-0;
       }
     }
   }

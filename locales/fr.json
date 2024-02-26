@@ -48,6 +48,6 @@
   "about_us_parking": "Parking",
   "about_us_wifi": "Wifi",
   "about_us_shower": "Douche",
-  "about_us_family": "2 adultes <br/>+ 1 enfant <span class='text-11'>(+ de 7 ans)</span>",
+  "about_us_family": "2 adultes <br/>+ 1 enfant <span class='text-11 lg:text-15'>(+ de 7 ans)</span>",
   "about_us_bed": "Lit 160x200"
 }

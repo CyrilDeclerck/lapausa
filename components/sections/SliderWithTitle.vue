@@ -19,7 +19,7 @@
       </SwiperSlide>
       <div
         :class="classTitle"
-        class="w-full bg-lp-camel flex items-center justify-between py-4 px-3 text-lp-grey-blue"
+        class="w-full bg-lp-camel flex items-center justify-between py-4 px-3 text-lp-grey-blue lg:py-2_5 lg:px-2 lg:text-18"
       >
         <Swiper
           :modules="[SwiperThumbs, SwiperEffectFade]"
@@ -44,7 +44,7 @@
 <style scoped lang="postcss">
 .swiper-image.swiper {
   :deep(> .swiper-wrapper) {
-    height: calc(100dvh - 210px);
+    @apply h-[calc(100dvh-210px)] lg:h-[760px];
   }
 }
 </style>

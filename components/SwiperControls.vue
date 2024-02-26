@@ -19,7 +19,7 @@ const swiper = useSwiper();
 .arrow {
   @apply block;
   :deep(svg) {
-    @apply w-2_5 h-2_5 m-0;
+    @apply w-2_5 h-2_5 m-0 lg:w-2 lg:h-2;
   }
   &.prev {
     @apply rotate-180;
