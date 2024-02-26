@@ -57,15 +57,15 @@ const slides = [
   {
     alt: "la pausa",
     images: {
-      desktop: "/_ipx/_/home-d.jpg",
-      mobile: "/_ipx/_/home.jpg",
+      desktop: "/home-d.jpg",
+      mobile: "/home.jpg",
     },
   },
   {
     alt: "la pausa 1",
     images: {
-      desktop: "/_ipx/_/home-d.jpg",
-      mobile: "/_ipx/_/home.jpg",
+      desktop: "/home-d.jpg",
+      mobile: "/home.jpg",
     },
   },
 ];
