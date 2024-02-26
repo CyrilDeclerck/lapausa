@@ -25,6 +25,7 @@
 
           <NuxtImg
             :src="slide.images.desktop"
+            preload
             format="webp"
             alt="Image"
             class="max-w-none h-full w-full object-cover"

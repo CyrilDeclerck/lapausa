@@ -7,6 +7,7 @@ export default defineNuxtConfig({
       routes: [
         "/_ipx/_/home.jpg",
         "/_ipx/_/home-d.jpg",
+        "/_ipx/f_webp/home-d.jpg",
         // etc.
       ],
     },
