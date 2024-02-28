@@ -1,11 +1,16 @@
 <template>
-  <div class="py-6 px-3 bg-white" id="activities">
-    <h3 class="subtitle">{{ $t("activities_and_services") }}</h3>
+  <div
+    class="py-6 px-3 bg-white lg:pr-12 xl:pl-14 xl:pb-8 xl:pt-9 lg:max-h-[827px]"
+    id="activities"
+  >
+    <h3 class="subtitle lg:mb-2_5">{{ $t("activities_and_services") }}</h3>
     <h2 class="title">{{ $t("activities") }}</h2>
-    <p class="mb-4 text-20">{{ $t("activities_description") }}</p>
-    <table class="table-fixed w-full mb-6">
+    <p class="mb-4 text-20 lg:text-23 lg:max-w-[493px]">
+      {{ $t("activities_description") }}
+    </p>
+    <table class="table-fixed w-full mb-6 lg:mb-0">
       <thead>
-        <tr>
+        <tr class="lg:text-17">
           <th></th>
           <th>
             <span>
@@ -27,7 +32,7 @@
           </th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="lg:text-18">
         <tr v-for="activity in activities">
           <th>{{ $t(activity.name) }}</th>
           <td>
@@ -110,7 +115,7 @@ const activities = [
 <style scoped lang="postcss">
 thead {
   th {
-    @apply first:w-1/3 w-1/5;
+    @apply first:w-1/3 w-1/5 lg:first:w-2/5;
     > span {
       @apply flex items-center justify-center gap-0_5;
     }
@@ -121,7 +126,7 @@ table {
     @apply border-b border-lp-camel text-left;
   }
   td {
-    @apply text-center text-lp-grey py-0_5;
+    @apply text-center text-lp-grey py-0_5 lg:py-[2px];
   }
 }
 </style>

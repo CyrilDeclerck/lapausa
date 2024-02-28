@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <div class="pb-[70px]">
+    <div class="pb-[70px] lg:pb-0">
       <NuxtPage />
       <Footer />
     </div>

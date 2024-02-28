@@ -24,7 +24,7 @@
           <source media="(max-width: 1023px)" :srcset="slide.images.mobile" />
 
           <NuxtImg
-            :src="slide.images.desktop"
+            :src="slide.images.mobile"
             preload
             format="webp"
             alt="Image"

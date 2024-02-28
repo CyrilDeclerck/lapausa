@@ -13,13 +13,21 @@
     <SectionsActivities />
     <SectionsSliderWithTitle
       :slides="activitiesSlides"
-      class-title="bg-white"
+      class-title="bg-white lg:bg-lp-camel"
     />
   </section>
   <section>
+    <NuxtImg
+      src="/services.jpg"
+      height="830"
+      width="750"
+      format="webp"
+      loading="lazy"
+      class="hidden lg:block object-bottom h-full w-full object-cover"
+    />
     <SectionsServices />
   </section>
-  <section>
+  <section class="lg:grid-cols-none">
     <SectionsAccess />
   </section>
 </template>

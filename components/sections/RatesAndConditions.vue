@@ -18,7 +18,7 @@
       </div>
     </div>
     <div>
-      <h2 class="title mt-4">{{ $t("conditions") }}</h2>
+      <h2 class="title mt-6">{{ $t("conditions") }}</h2>
       <ul class="list-disc list-inside max-w-[420px]">
         <li>{{ $t("conditions_1") }}</li>
         <li>{{ $t("conditions_2") }}</li>

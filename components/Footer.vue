@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative pt-7 pb-14 px-3 bg-lp-green-light flex flex-col items-center"
+    class="relative pt-7 pb-14 px-3 bg-lp-green-light flex flex-col items-center lg:hidden"
     id="contact"
   >
     <div>
