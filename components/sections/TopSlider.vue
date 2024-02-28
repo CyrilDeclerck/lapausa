@@ -58,8 +58,8 @@ const slides = [
   {
     alt: "la pausa",
     images: {
-      desktop: "/home-d.jpg",
-      mobile: "/home.jpg",
+      desktop: "/home-d.webp",
+      mobile: "/home.webp",
     },
   },
 ];
