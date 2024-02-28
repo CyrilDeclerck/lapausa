@@ -5,10 +5,10 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: [
-        "/_ipx/_/home.jpg",
-        "/_ipx/_/home-d.jpg",
-        "/_ipx/f_webp/home-d.jpg",
-        "/_ipx/f_webp/home.jpg",
+        "/_ipx/_/home.webp",
+        "/_ipx/_/home-d.webp",
+        "/_ipx/f_webp/home-d.webp",
+        "/_ipx/f_webp/home.webp",
         //intérieur
         "/_ipx/f_webp&s_750x760/interieur/chambre.jpg",
         "/_ipx/f_webp&s_750x760/interieur/chambre-1.jpg",
