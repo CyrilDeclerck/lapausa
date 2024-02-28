@@ -11,8 +11,12 @@
       }"
     >
       <SwiperSlide v-for="slide in slides">
-        <img
+        <NuxtImg
           :src="slide.src"
+          loading="lazy"
+          format="webp"
+          width="750"
+          height="760"
           class="max-w-none h-full w-full object-cover"
           :alt="slide.title"
         />

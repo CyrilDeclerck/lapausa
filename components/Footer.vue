@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative pt-7 pb-14 px-3 bg-lp-green-light flex flex-col items-center lg:hidden"
+    class="relative pt-7 pb-14 px-3 bg-lp-green-light flex flex-col items-center z-10 lg:hidden"
     id="contact"
   >
     <div>
@@ -21,7 +21,18 @@
       <img src="~/assets/images/logo.png" alt="La Pausa" class="h-[99px]" />
     </div>
   </div>
-  <div class="bg-lp-green pt-14 pb-3 text-center text-white">
+  <div class="bg-lp-green pt-14 pb-3 text-center text-white relative">
+    <div
+      class="hidden absolute inset-x-0 -top-[110px] items-center justify-center lg:flex"
+    >
+      <NuxtImg
+        loading="lazy"
+        src="/logo-dark.png"
+        alt="La Pausa"
+        height="220"
+        class="h-[220px]"
+      />
+    </div>
     <span class="subtitle">{{ $t("contact") }}</span>
     <div class="mt-3">
       WhatsApp – Phone<br />

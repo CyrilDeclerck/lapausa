@@ -62,12 +62,5 @@ const slides = [
       mobile: "/home.jpg",
     },
   },
-  {
-    alt: "la pausa 1",
-    images: {
-      desktop: "/home-d.jpg",
-      mobile: "/home.jpg",
-    },
-  },
 ];
 </script>

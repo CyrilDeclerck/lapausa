@@ -1,23 +1,24 @@
 <template>
-  <div class="py-6 px-3 lg:text-center" id="access">
+  <div class="py-6 px-3 lg:text-center lg:px-0" id="access">
     <h3 class="subtitle lg:mb-0">{{ $t("access") }}</h3>
     <h2 class="title mb-3 lg:mb-6">{{ $t("to_join_us") }}</h2>
     <iframe
       class="w-full aspect-video mb-6 lg:max-w-[720px] lg:m-auto"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2854.7525555652146!2d9.35885247690282!3d44.315037209373635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4980731bf4ecd%3A0x134c31f895a6f3d3!2sVia%20Madonna%20della%20Neve%2C%2016033%20Lavagna%20GE%2C%20Italie!5e0!3m2!1sfr!2sfr!4v1707160594849!5m2!1sfr!2sfr"
-      width="360"
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d713.6675515637423!2d9.364709269718107!3d44.31672995773784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDTCsDE5JzAwLjIiTiA5wrAyMSc1NS4zIkU!5e0!3m2!1sfr!2sfr!4v1709133248574!5m2!1sfr!2sfr"
+      width="600"
       height="450"
       style="border: 0"
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
+
     <div
-      class="text-20 lg:grid lg:grid-cols-4 lg:items-baseline lg:justify-center lg:mt-6"
+      class="text-20 lg:grid lg:grid-cols-4 lg:items-baseline lg:justify-center lg:mt-6 lg:gap-3 lg:text-23 lg:text-left"
     >
       <div>
         <span class="mb-3 flex items-center gap-3 lg:text-30">
-          <nuxt-icon name="plane" />
+          <nuxt-icon name="plane" class="icon" />
           <span class="flex-1">{{ $t("nearest_airports") }}</span>
         </span>
         <ul class="list-disc list-inside">
@@ -28,7 +29,7 @@
       </div>
       <div class="mt-3">
         <span class="mb-3 flex items-center gap-3 lg:text-30">
-          <nuxt-icon name="train" />
+          <nuxt-icon name="train" class="icon" />
           {{ $t("nearby_stations") }}
         </span>
         <ul class="list-disc list-inside">
@@ -38,16 +39,16 @@
       </div>
       <div class="mt-3">
         <span class="mb-3 flex items-center gap-3 lg:text-30">
-          <nuxt-icon name="taxi" />
+          <nuxt-icon name="taxi" class="icon" />
           {{ $t("servizio_taxi") }}
         </span>
-        <p class="mb-0">Davanti alla Stazione FS Lavagna</p>
+        <p class="mb-0">Davanti alla Stazione <br />FS Lavagna</p>
         {{ $t("phone") }}
         <a href="tel:+390185392096" class="underline">+39 0185 392096</a>
       </div>
       <div class="mt-3">
         <span class="mb-3 flex items-center gap-3 lg:text-30">
-          <nuxt-icon name="marker" />
+          <nuxt-icon name="marker" class="icon" />
           {{ $t("address") }}
         </span>
         <p>
@@ -62,6 +63,11 @@
 <script setup lang="ts"></script>
 <style lang="postcss" scoped>
 ul {
-  @apply -indent-3 ml-3;
+  @apply -indent-4 ml-4;
+}
+.icon {
+  :deep(svg) {
+    @apply w-2 h-2;
+  }
 }
 </style>

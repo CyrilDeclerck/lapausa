@@ -18,11 +18,12 @@
   </section>
   <section>
     <NuxtImg
-      src="/services.jpg"
+      src="/services/sport-yoga.webp"
       height="830"
       width="750"
       format="webp"
       loading="lazy"
+      :modifiers="{ position: 'bottom' }"
       class="hidden lg:block object-bottom h-full w-full object-cover"
     />
     <SectionsServices />
@@ -34,34 +35,78 @@
 <script setup>
 const insideSlides = [
   {
-    src: "/kitchen.png",
-    title: "Cuisine",
+    src: "/interieur/chambre.jpg",
+    title: "Chambre",
   },
   {
-    src: "/home.jpg",
-    title: "Image 2",
+    src: "/interieur/chambre-1.jpg",
+    title: "Chambre",
+  },
+  {
+    src: "/interieur/cuisine.jpg",
+    title: "Chambre",
+  },
+  {
+    src: "/interieur/cuisine-salon.jpg",
+    title: "Cuisine et Salon",
+  },
+  {
+    src: "/interieur/douche.jpg",
+    title: "La douche",
+  },
+  {
+    src: "/interieur/photo-ambiance-bouquin-cuisine.jpg",
+    title: "La cuisine",
+  },
+  {
+    src: "/interieur/photo-ambiance-cuisine-citron.jpg",
+    title: "La cuisine",
+  },
+  {
+    src: "/interieur/photo-ambiance-echelle.jpg",
+    title: "Chambre",
+  },
+  {
+    src: "/interieur/salon-escalier.jpg",
+    title: "le Salon",
+  },
+  {
+    src: "/interieur/sdb-vue-mer.jpg",
+    title: "La salle de bain",
+  },
+  {
+    src: "/interieur/wc.jpg",
+    title: "Les toilettes",
   },
 ];
 
 const outsideSlides = [
   {
-    src: "/garden.png",
-    title: "La terrasse",
+    src: "/exterieur/coucher-de-soleil.jpg",
+    title: "Coucher de soleil",
   },
   {
-    src: "/home.jpg",
-    title: "Image 2",
+    src: "/exterieur/vue-colline.jpg",
+    title: "Vue colline",
+  },
+  {
+    src: "/exterieur/vue-mer-panoramique.jpg",
+    title: "Vue mer panoramique",
   },
 ];
 
 const activitiesSlides = [
   {
-    src: "/portofino.jpg",
+    src: "/activites/portofino.jpg",
     title: "Portofino",
   },
   {
-    src: "/home.jpg",
-    title: "Image 2",
+    src: "/activites/camogli.jpg",
+    title: "Camogli",
+  },
+  {
+    src: "/activites/sestri-baia.webp",
+    title: "Sestri Baia",
   },
 ];
 </script>
