@@ -3,12 +3,8 @@
     <Swiper
       :modules="[SwiperNavigation, SwiperThumbs]"
       :thumbs="{ swiper: thumbsSwiper }"
-      :slides-per-view="1"
       class="swiper-image"
-      :navigation="{
-        nextEl: '.arrow.next',
-        prevEl: '.arrow.prev',
-      }"
+      :lazy="true"
     >
       <SwiperSlide v-for="slide in slides">
         <NuxtImg
@@ -20,12 +16,14 @@
           class="max-w-none h-full w-full object-cover"
           :alt="slide.title"
         />
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </SwiperSlide>
       <div
         :class="classTitle"
         class="w-full bg-lp-camel flex items-center justify-between py-4 px-3 text-lp-grey-blue lg:py-2_5 lg:px-2 lg:text-18"
       >
         <Swiper
+          v-if="!withoutTitle"
           :modules="[SwiperThumbs, SwiperEffectFade]"
           @swiper="setThumbsSwiper"
           effect="fade"
@@ -53,7 +51,11 @@
 }
 </style>
 <script setup>
-const { slides, classTitle } = defineProps(["slides", "classTitle"]);
+const { slides, classTitle, withoutTitle } = defineProps([
+  "slides",
+  "classTitle",
+  "withoutTitle",
+]);
 
 const thumbsSwiper = ref(null);
 const setThumbsSwiper = (swiper) => {

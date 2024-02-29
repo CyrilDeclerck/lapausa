@@ -4,8 +4,13 @@
       <h2 class="subtitle">{{ $t("about_us") }}</h2>
       <p v-html="$t('about_us_first_part')"></p>
       <p v-html="$t('about_us_second_part')"></p>
-      <span class="italic underline cursor-pointer lg:text-20"
-        >{{ $t("show_more_link") }} ></span
+      <transition>
+        <div v-if="readMore" v-html="$t('about_us_third_part')"></div>
+      </transition>
+      <span
+        class="italic underline cursor-pointer lg:text-20"
+        @click="readMore = !readMore"
+        >{{ readMore ? $t("show_less_link") : $t("show_more_link") }} ></span
       >
     </div>
     <div
@@ -58,4 +63,18 @@ const services = [
     icon: "bed",
   },
 ];
+
+const readMore = ref(false);
 </script>
+<style lang="postcss" scoped>
+/* we will explain what these classes do next! */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>

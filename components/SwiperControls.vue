@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center">
+  <div class="flex items-center ml-auto">
     <nuxt-icon
       name="arrow"
       class="arrow prev"

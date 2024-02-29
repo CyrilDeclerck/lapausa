@@ -3,7 +3,7 @@
   <StickyButtons class="lg:!hidden" />
   <section>
     <SectionsAboutUs />
-    <SectionsSliderWithTitle :slides="insideSlides" />
+    <SectionsSliderWithTitle :without-title="true" :slides="insideSlides" />
   </section>
   <section>
     <SectionsRatesAndConditions class="lg:order-2" />
@@ -18,7 +18,7 @@
   </section>
   <section>
     <NuxtImg
-      src="/services/sport-yoga.webp"
+      src="/services/services.webp"
       height="830"
       width="750"
       format="webp"
@@ -106,7 +106,7 @@ const activitiesSlides = [
   },
   {
     src: "/activites/sestri-baia.webp",
-    title: "Sestri Baia",
+    title: "Sestri - Baia del Silenzio",
   },
 ];
 </script>
