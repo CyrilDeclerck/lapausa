@@ -34,7 +34,7 @@
           src="~/assets/images/logo.png"
           alt="La Pausa"
           v-show="!menu"
-          class="logo transition-all absolute bg-lp-green-light rounded-full mx-auto inset-x-0 top-0 mt-1 p-1 h-[120px] lg:mt-0 lg:h-[123px]"
+          class="cursor-pointer logo transition-all absolute bg-lp-green-light rounded-full mx-auto inset-x-0 top-0 mt-1 p-1 h-[120px] lg:mt-0 lg:h-[123px]"
           @click="y = 0"
         />
       </transition>
