@@ -37,7 +37,7 @@
   "station2": "Stazione di Chiavari :<br/>+ 10 min. di auto",
   "servizio_taxi": "Servizio taxi",
   "address": "Indirizzo",
-  "request_reservation": "Demande <br/> de réservation :",
+  "request_reservation": "Prenotazione<br/>richiesta :",
   "conditions_1": "2 notti minime.",
   "conditions_2": "Sconto del 15% a partire da 5 notti",
   "conditions_3": "Supplemento di 15€ a notte se aggiunta di un letto supplementare",
@@ -50,5 +50,6 @@
   "about_us_shower": "Doccia",
   "about_us_family": "2 adulti <br/>+ 1 bambino <span class='text-11 lg:text-15'>(+ di 7 anni)</span>",
   "about_us_bed": "Letto 160x200",
-  "about_us_third_part": "<p>Casa vacanza, luogo di evasione o rifugio per un ritiro solitario, La Pausa riflette il cambiamento di vita di Marie e Leonard, di origini corse e italiane, che hanno lasciato Parigi per ritrovare le coste del Mediterraneo e offrire a tutti gli amanti delle destinazioni di charme un’esperienza unica, lontana dai sentieri battuti.</p><p>La pausa è una piccola casa indipendente di 35 mq. Può ospitare due adulti e un letto supplementare per un bambino sopra i 7 anni. Offre al piano terra un soggiorno e una cucina attrezzata con accesso alla terrazza e al giardino, al piano superiore, una camera matrimoniale con vista collina ed il suo bagno con vista mare. Un posto auto è a disposizione degli ospiti.</p>"
+  "about_us_third_part": "<p>Casa vacanza, luogo di evasione o rifugio per un ritiro solitario, La Pausa riflette il cambiamento di vita di Marie e Leonard, di origini corse e italiane, che hanno lasciato Parigi per ritrovare le coste del Mediterraneo e offrire a tutti gli amanti delle destinazioni di charme un’esperienza unica, lontana dai sentieri battuti.</p><p>La pausa è una piccola casa indipendente di 35 mq. Può ospitare due adulti e un letto supplementare per un bambino sopra i 7 anni. Offre al piano terra un soggiorno e una cucina attrezzata con accesso alla terrazza e al giardino, al piano superiore, una camera matrimoniale con vista collina ed il suo bagno con vista mare. Un posto auto è a disposizione degli ospiti.</p>",
+  "show_less_link": "Leggi di più"
 }

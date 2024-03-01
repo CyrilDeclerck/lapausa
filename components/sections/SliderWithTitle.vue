@@ -6,7 +6,7 @@
       class="swiper-image"
       :lazy="true"
     >
-      <SwiperSlide v-for="slide in slides">
+      <SwiperSlide v-for="slide in slides" class="bg-lp-green-light/30">
         <NuxtImg
           :src="slide.src"
           loading="lazy"
@@ -16,7 +16,7 @@
           class="max-w-none h-full w-full object-cover"
           :alt="slide.title"
         />
-        <div class="swiper-lazy-preloader"></div>
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </SwiperSlide>
       <div
         :class="classTitle"

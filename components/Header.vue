@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-lp-green-light px-4 h-[75px] relative sticky top-0 z-50 lg:pl-9 lg:pr-0"
+    class="bg-lp-green-light px-4 h-[75px] relative sticky top-0 z-50 lg:pr-0 2xl:pl-9"
     :class="{ 'sticky-header': y >= 50 }"
   >
     <div
@@ -108,7 +108,7 @@ useHead({
 
 nav {
   ul {
-    @apply lg:flex lg:gap-6 lg:items-center lg:h-full;
+    @apply lg:text-18 lg:flex lg:gap-2 lg:items-center lg:h-full 2xl:text-23 2xl:gap-6;
     li {
       @apply text-25 border-b pb-2_5 mb-2_5 text-center border-lp-grey-blue lg:text-18 lg:border-0 lg:mb-0 lg:pb-0 lg:h-full lg:flex lg:items-center;
       &:last-child {

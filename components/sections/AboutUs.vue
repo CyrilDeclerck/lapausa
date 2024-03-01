@@ -5,7 +5,11 @@
       <p v-html="$t('about_us_first_part')"></p>
       <p v-html="$t('about_us_second_part')"></p>
       <transition>
-        <div v-if="readMore" v-html="$t('about_us_third_part')"></div>
+        <div
+          v-if="readMore"
+          class="text-20 lg:text-23"
+          v-html="$t('about_us_third_part')"
+        ></div>
       </transition>
       <span
         class="italic underline cursor-pointer lg:text-20"
