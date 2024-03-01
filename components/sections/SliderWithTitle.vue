@@ -14,7 +14,7 @@
           width="750"
           height="760"
           class="max-w-none h-full w-full object-cover"
-          :alt="slide.title"
+          :alt="$t(slide.title)"
         />
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
       </SwiperSlide>
@@ -34,7 +34,7 @@
             :class="classTitle"
             class="bg-lp-camel"
           >
-            {{ slide.title }}
+            {{ $t(slide.title) }}
           </SwiperSlide>
         </Swiper>
         <SwiperControls />
@@ -46,7 +46,7 @@
 <style scoped lang="postcss">
 .swiper-image.swiper {
   :deep(> .swiper-wrapper) {
-    @apply h-[calc(100dvh-210px)] lg:h-[760px];
+    @apply h-[calc(100vh-210px)] lg:h-[760px];
   }
 }
 </style>

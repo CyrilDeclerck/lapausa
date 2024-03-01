@@ -83,15 +83,15 @@ const insideSlides = [
 const outsideSlides = [
   {
     src: "/exterieur/coucher-de-soleil.jpg",
-    title: "Coucher de soleil",
+    title: "outsideImageText1",
   },
   {
     src: "/exterieur/vue-colline.jpg",
-    title: "Vue colline",
+    title: "outsideImageText2",
   },
   {
     src: "/exterieur/vue-mer-panoramique.jpg",
-    title: "Vue mer panoramique",
+    title: "outsideImageText3",
   },
 ];
 
@@ -109,4 +109,8 @@ const activitiesSlides = [
     title: "Sestri - Baia del Silenzio",
   },
 ];
+const { t } = useI18n();
+useSeoMeta({
+  title: t("SEO_title"),
+});
 </script>

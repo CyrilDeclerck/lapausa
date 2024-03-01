@@ -10,7 +10,7 @@
 
 <script setup>
 useSeoMeta({
-  robots: "noindex, nofollow",
+  robots: "index, follow",
   themeColor: "#B6B9A2",
 });
 useHead({});
