@@ -46,44 +46,34 @@
       <transition name="slidedown">
         <nav
           v-show="menu"
-          :class="{ 'top-[50px]': y >= 50 }"
+          :class="{ '!top-[50px]': y >= 50 }"
           class="w-full h-screen bg-lp-green-light z-50 fixed lg:static lg:w-auto lg:h-auto lg:z-auto inset-0 top-[75px] lg:!block lg:h-full"
         >
           <ul class="p-4 lg:p-0">
             <li>
-              <NuxtLink
-                :to="{ path: '/', hash: '#about-us' }"
-                @click="menu = false"
-                >{{ $t("about_us") }}</NuxtLink
-              >
+              <NuxtLink to="#about-us" @click="menu = false">{{
+                $t("about_us")
+              }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink
-                :to="{ path: '/', hash: '#rates' }"
-                @click="menu = false"
-                >{{ $t("rates_and_conditions") }}</NuxtLink
-              >
+              <NuxtLink to="#rates" @click="menu = false">{{
+                $t("rates_and_conditions")
+              }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink
-                :to="{ path: '/', hash: '#activities' }"
-                @click="menu = false"
-                >{{ $t("activities_and_services") }}</NuxtLink
-              >
+              <NuxtLink to="#activities" @click="menu = false">{{
+                $t("activities_and_services")
+              }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink
-                :to="{ path: '/', hash: '#access' }"
-                @click="menu = false"
-                >{{ $t("access") }}</NuxtLink
-              >
+              <NuxtLink to="#access" @click="menu = false">{{
+                $t("access")
+              }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink
-                :to="{ path: '/', hash: '#contact' }"
-                @click="menu = false"
-                >{{ $t("contact") }}</NuxtLink
-              >
+              <NuxtLink to="#contact" @click="menu = false">{{
+                $t("contact")
+              }}</NuxtLink>
             </li>
           </ul>
         </nav>
@@ -145,18 +135,16 @@ nav {
 
 .slidedown-enter-active,
 .slidedown-leave-active {
-  transition: max-height 1s ease-in-out;
+  transition: transform ease-in-out 0.5s;
 }
 
 .slidedown-enter-to,
 .slidedown-leave-from {
-  overflow: hidden;
-  max-height: 100dvh;
+  transform: translate(0, 0);
 }
 
 .slidedown-enter-from,
 .slidedown-leave-to {
-  overflow: hidden;
-  max-height: 0;
+  transform: translateX(100%);
 }
 </style>

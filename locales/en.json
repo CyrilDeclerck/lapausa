@@ -28,13 +28,13 @@
   "services_description": "<p>At La Pausa, guests enjoy a \"home-like\" welcome with quality services and amenities.</p><p>It is fully equipped with linens and care products. We can assist you in organizing your stay through our network of professionals:</p><ul><li>Boat and scooter rental</li><li>Yoga classes, personal trainer</li><li>Massages</li><li>Cooking classes</li><li>Tennis lessons...</li></ul><p>Upon arrival, you will find a booklet in which we have selected the best addresses to discover (restaurants, caterers, private beaches, markets, where to find the best focaccia 😊, the best aperitivos!, the most beautiful hikes...)</p>",
   "to_join_us": "To join us",
   "nearest_airports": "Nearest airports",
-  "airport1": "Genoa Airport: + 35 minutes by car",
-  "airport2": "Pisa Airport: + 1H15 by car",
-  "airport3": "Nice Airport: + 2H30 by car",
+  "airport1": "Genoa Airport:<br/>+ 35 minutes by car",
+  "airport2": "Pisa Airport:<br/>+ 1H15 by car",
+  "airport3": "Nice Airport:<br/>+ 2H30 by car",
   "phone": "Tel:",
   "nearby_stations": "Nearby train stations",
-  "station1": "Lavagna Station: + 5 minutes by car",
-  "station2": "Chiavari Station: + 10 minutes by car",
+  "station1": "Lavagna Station:<br/>+ 5 minutes by car",
+  "station2": "Chiavari Station:<br/>+ 10 minutes by car",
   "servizio_taxi": "Taxi service",
   "address": "Address",
   "request_reservation": "Request <br/> reservation:",
@@ -49,5 +49,6 @@
   "about_us_wifi": "Wifi",
   "about_us_shower": "Shower",
   "about_us_family": "2 adults <br/>+ 1 child <span class='text-11 lg:text-15'>(+ over 7 years old)</span>",
-  "about_us_bed": "Bed 160x200"
+  "about_us_bed": "Bed 160x200",
+  "about_us_third_part": "<p>Whether a vacation home, a place of escape, or a retreat for solitude, La Pausa reflects the life change of Marie and Leonard, Corsican and Italian by origin, who left Paris to rediscover the shores of the Mediterranean and offer all lovers of charming destinations a unique experience away from the beaten paths.</p><p>La Pausa is a small independent house of 35 m2; it can accommodate two adults and an extra bed for a child over 7 years old. On the ground floor, it offers a living room and an equipped kitchen with access to the terrace and the garden. Upstairs, a double bedroom with a hill view and a bathroom with a sea view. A parking space is at your disposal.</p>"
 }

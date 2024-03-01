@@ -22,9 +22,9 @@
           <span class="flex-1">{{ $t("nearest_airports") }}</span>
         </span>
         <ul class="list-disc list-inside">
-          <li>{{ $t("airport1") }}</li>
-          <li>{{ $t("airport2") }}</li>
-          <li>{{ $t("airport3") }}</li>
+          <li v-html="$t('airport1')"></li>
+          <li v-html="$t('airport2')"></li>
+          <li v-html="$t('airport3')"></li>
         </ul>
       </div>
       <div class="mt-3">
@@ -33,8 +33,8 @@
           {{ $t("nearby_stations") }}
         </span>
         <ul class="list-disc list-inside">
-          <li>{{ $t("station1") }}</li>
-          <li>{{ $t("station2") }}</li>
+          <li v-html="$t('station1')"></li>
+          <li v-html="$t('station2')"></li>
         </ul>
       </div>
       <div class="mt-3">

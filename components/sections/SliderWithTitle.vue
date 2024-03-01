@@ -16,7 +16,7 @@
           class="max-w-none h-full w-full object-cover"
           :alt="slide.title"
         />
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        <div class="swiper-lazy-preloader"></div>
       </SwiperSlide>
       <div
         :class="classTitle"
