@@ -23,6 +23,7 @@
       width="750"
       format="webp"
       loading="lazy"
+      :alt="$t('services')"
       :modifiers="{ position: 'bottom' }"
       class="hidden lg:block object-bottom h-full w-full object-cover"
     />
@@ -112,6 +113,7 @@ const activitiesSlides = [
 const { t } = useI18n();
 useSeoMeta({
   title: t("SEO_title"),
+  description: t("SEO_desc"),
 });
 const head = useLocaleHead({
   addSeoAttributes: true,
