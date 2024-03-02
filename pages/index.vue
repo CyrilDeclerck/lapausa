@@ -113,4 +113,7 @@ const { t } = useI18n();
 useSeoMeta({
   title: t("SEO_title"),
 });
+const head = useLocaleHead({
+  addSeoAttributes: true,
+});
 </script>
