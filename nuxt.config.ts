@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
+    baseUrl: "https://www.lapausa-liguria.it/",
     locales: [
       {
         code: "en",
