@@ -3,6 +3,7 @@
     <h3 class="subtitle lg:mb-0">{{ $t("access") }}</h3>
     <h2 class="title mb-3 lg:mb-6">{{ $t("to_join_us") }}</h2>
     <iframe
+      :title="$t('to_join_us')"
       class="w-full aspect-video mb-6 lg:max-w-[720px] lg:m-auto"
       src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d713.6675515637423!2d9.364709269718107!3d44.31672995773784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDTCsDE5JzAwLjIiTiA5wrAyMSc1NS4zIkU!5e0!3m2!1sfr!2sfr!4v1709133248574!5m2!1sfr!2sfr"
       width="600"

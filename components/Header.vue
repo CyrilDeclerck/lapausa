@@ -9,6 +9,7 @@
       <div class="lg:flex lg:h-full">
         <select
           @change="setLocale($event.target.value)"
+          aria-label="Langage"
           class="bg-lp-green-light text-12"
         >
           <option
