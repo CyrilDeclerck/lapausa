@@ -20,6 +20,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "@vueuse/core": "^10.7.2",
     "@vueuse/nuxt": "^10.7.2",
     "nuxt-icons": "^3.2.1",
