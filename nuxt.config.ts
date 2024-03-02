@@ -19,6 +19,15 @@ export default defineNuxtConfig({
       },
     },
   },
+  head: {
+    link: [
+      {
+        rel: "preload",
+        href: "/home.webp",
+        as: "image",
+      },
+    ],
+  },
   i18n: {
     baseUrl: "https://www.lapausa-liguria.it",
     locales: [
