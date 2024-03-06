@@ -72,7 +72,7 @@
               }}</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#contact" @click="menu = false">{{
+              <NuxtLink to="#contact" @click="contactLink">{{
                 $t("contact")
               }}</NuxtLink>
             </li>
@@ -97,6 +97,14 @@ useHead({
     class: computed(() => (menu.value ? "overflow-hidden" : "")),
   },
 });
+
+const contactLink = () => {
+  if (isDesktop.value) {
+    window.location.href = "mailto:lapausa.liguria@gmail.com";
+  } else {
+    menu.value = false;
+  }
+};
 </script>
 
 <style lang="postcss" scoped>

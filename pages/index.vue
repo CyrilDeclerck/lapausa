@@ -16,7 +16,7 @@
       class-title="bg-white lg:bg-lp-camel"
     />
   </section>
-  <section>
+  <section class="flex flex-col-reverse lg:grid">
     <NuxtImg
       src="/services/services.webp"
       height="830"
@@ -25,7 +25,7 @@
       loading="lazy"
       :alt="$t('services')"
       :modifiers="{ position: 'bottom' }"
-      class="hidden lg:block object-bottom h-full w-full object-cover"
+      class="object-bottom h-full w-full object-cover"
     />
     <SectionsServices />
   </section>
@@ -36,27 +36,15 @@
 <script setup>
 const insideSlides = [
   {
-    src: "/interieur/chambre.jpg",
-    title: "Chambre",
-  },
-  {
-    src: "/interieur/chambre-1.jpg",
-    title: "Chambre",
-  },
-  {
-    src: "/interieur/cuisine.jpg",
-    title: "Chambre",
-  },
-  {
     src: "/interieur/cuisine-salon.jpg",
     title: "Cuisine et Salon",
   },
   {
-    src: "/interieur/douche.jpg",
-    title: "La douche",
+    src: "/interieur/salon-escalier.jpg",
+    title: "le Salon",
   },
   {
-    src: "/interieur/photo-ambiance-bouquin-cuisine.jpg",
+    src: "/interieur/cuisine.jpg",
     title: "La cuisine",
   },
   {
@@ -64,20 +52,36 @@ const insideSlides = [
     title: "La cuisine",
   },
   {
-    src: "/interieur/photo-ambiance-echelle.jpg",
-    title: "Chambre",
-  },
-  {
-    src: "/interieur/salon-escalier.jpg",
-    title: "le Salon",
-  },
-  {
-    src: "/interieur/sdb-vue-mer.jpg",
-    title: "La salle de bain",
+    src: "/interieur/photo-ambiance-bouquin-cuisine.jpg",
+    title: "La cuisine",
   },
   {
     src: "/interieur/wc.jpg",
     title: "Les toilettes",
+  },
+  {
+    src: "/interieur/chambre-1.jpg",
+    title: "Chambre",
+  },
+  {
+    src: "/interieur/chambre.jpg",
+    title: "Chambre",
+  },
+  {
+    src: "/interieur/photo-ambiance-echelle.jpg",
+    title: "Chambre",
+  },
+  {
+    src: "/interieur/douche.jpg",
+    title: "La douche",
+  },
+  {
+    src: "/interieur/echelle-vasque.jpg",
+    title: "La salle de bain",
+  },
+  {
+    src: "/interieur/sdb-vue-mer.jpg",
+    title: "La salle de bain",
   },
 ];
 
@@ -104,6 +108,10 @@ const activitiesSlides = [
   {
     src: "/activites/camogli.jpg",
     title: "Camogli",
+  },
+  {
+    src: "/activites/cinque-terre.webp",
+    title: "Cinque Terre",
   },
   {
     src: "/activites/sestri-baia.webp",

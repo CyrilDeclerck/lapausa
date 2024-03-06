@@ -4,6 +4,7 @@
       :modules="[SwiperNavigation, SwiperThumbs]"
       :thumbs="{ swiper: thumbsSwiper }"
       class="swiper-image"
+      :loop="true"
       :lazy="true"
     >
       <SwiperSlide v-for="slide in slides" class="bg-lp-green-light/30">
